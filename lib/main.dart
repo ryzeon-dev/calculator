@@ -84,6 +84,10 @@ class _MyHomePageState extends State<MyHomePage> {
     setState(() {
       inputController.text = "";
       resultController.text = "";
+
+      if (justComputed) {
+        justComputed = false;
+      }
     });
   }
 
